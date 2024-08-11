@@ -776,11 +776,12 @@ input {
 .checkbox {
   margin-bottom: 24px;
 }
-.checkbox-modal-form:checked + .checkbox-item > .checkbox-span {
+.checkbox input:checked ~ label span {
   background-color: #404bbf;
   border: none;
-}
-.checkbox-modal-form:checked + .checkbox-item > .checkbox-vector {
   fill: #f4f4fd;
 }
+/* .checkbox-modal-form:checked ~ .checkbox-item.checkbox-vector {
+  fill: #f4f4fd;
+} */
 /* #endregion modal-overlay-section */
