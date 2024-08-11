@@ -593,12 +593,17 @@ input {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-modal-button:hover,
+.close-modal-button:hover {
+  background-color: #404bbf;
+  border: none;
+}
 .close-modal-button:focus {
   background-color: #404bbf;
   border: none;
 }
-.close-modal-button:hover > .close-modal-button-svg,
+.close-modal-button:hover > .close-modal-button-svg {
+  fill: #ffffff;
+}
 .close-modal-button:focus > .close-modal-button-svg {
   fill: #ffffff;
 }
@@ -633,6 +638,9 @@ input {
 }
 .modal-item-container {
   margin-bottom: 8px;
+}
+.modal-item-comment-container {
+  margin-bottom: 16px;
 }
 .name-modal-item {
   font-weight: 400;
@@ -768,11 +776,11 @@ input {
 .checkbox {
   margin-bottom: 24px;
 }
-.visually-hidden:checked + .checkbox-item > .checkbox-span {
+.checkbox-modal-form:checked + .checkbox-item > .checkbox-span {
   background-color: #404bbf;
   border: none;
 }
-.visually-hidden:checked + .checkbox-item > .checkbox-vector {
+.checkbox-modal-form:checked + .checkbox-item > .checkbox-vector {
   fill: #f4f4fd;
 }
 /* #endregion modal-overlay-section */
