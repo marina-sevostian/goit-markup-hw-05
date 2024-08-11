@@ -556,7 +556,7 @@ input {
 }
 .modal-overlay.is-open {
   opacity: 1;
-  pointer-events: none;
+  pointer-events: auto;
 }
 .modal {
   position: absolute;
@@ -601,15 +601,16 @@ input {
   background-color: #404bbf;
   border: none;
 }
+.close-modal-button-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .close-modal-button:hover > .close-modal-button-svg {
   fill: #ffffff;
 }
 .close-modal-button:focus > .close-modal-button-svg {
   fill: #ffffff;
 }
-.close-modal-button-svg {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .checkbox-vector {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -776,12 +777,17 @@ input {
 .checkbox {
   margin-bottom: 24px;
 }
-.checkbox input:checked ~ label span {
+/* .checkbox input:checked ~ label span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+} */
+.checkbox-modal-form:checked + .checkbox-item > .checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-/* .checkbox-modal-form:checked ~ .checkbox-item.checkbox-vector {
+.checkbox-modal-form:checked + .checkbox-item .checkbox-vector {
   fill: #f4f4fd;
-} */
+}
 /* #endregion modal-overlay-section */
