@@ -385,7 +385,7 @@ input {
   margin-bottom: 8px;
 }
 
-.porfolio-card {
+.our-portfolio-img {
   position: relative;
   overflow: hidden;
 }
@@ -516,7 +516,6 @@ input {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
   background: #4d5ae5;
@@ -582,7 +581,6 @@ input {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  fill: #e7e9fc;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -695,6 +693,7 @@ input {
   cursor: pointer;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
 .modal-list {
@@ -703,7 +702,6 @@ input {
   justify-content: flex-start;
   flex-direction: column;
   gap: 8px;
-  margin: 16px 24px;
 }
 
 .modal-box {
